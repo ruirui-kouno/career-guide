@@ -31,6 +31,7 @@
   .num{font-variant-numeric:tabular-nums}
   .card{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:18px 0}
   .card h3{margin-top:0}
+  .card img.guideimg{width:100%;height:auto;border-radius:8px;display:block;margin-bottom:12px}
   .ad{border:2px solid var(--accent);border-radius:10px;padding:18px 20px;margin:34px 0;background:#f5faf6}
   .ad h2{border-top:none;margin-top:0;padding-top:0}
   .ad a{color:var(--accent);font-weight:700}
@@ -38,6 +39,36 @@
   .src{font-size:13px;color:var(--muted)}
   footer{border-top:1px solid var(--line);margin-top:20px;padding:22px 0 40px;font-size:13px;color:var(--muted)}
   footer a{color:var(--muted)}
+  .hero{width:100%;height:auto;display:block;border-radius:12px;margin:2px 0 22px}
+  .pageimg{width:100%;height:auto;display:block;border-radius:12px;margin:2px 0 22px}
+  .svc{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;margin:20px 0;overflow:hidden}
+  .svc>img{width:100%;height:auto;display:block}
+  .svc-in{padding:16px 20px 18px}
+  .svc-in h3{margin-top:0}
+  .fit{background:#eef5f0;border-left:4px solid var(--accent);padding:8px 12px;margin:12px 0 4px;font-size:14.5px}
+  .fit b{color:var(--accent)}
+  .svcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:18px 0}
+  .svcgrid .svc{margin:0}
+  .cta{display:block;text-align:center;background:var(--core);color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-radius:12px;padding:16px 20px;margin:26px 0}
+  .cta small{display:block;font-weight:400;font-size:13.5px;color:#c8cfdd;margin-top:4px}
+  .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0 18px;border:1px solid var(--line);border-radius:8px}
+  .tablewrap table{margin:0;min-width:660px}
+  .cmp th:first-child,.cmp td:first-child{position:sticky;left:0;z-index:1;background:#fff;box-shadow:2px 0 0 var(--line);font-weight:600;color:var(--core);min-width:128px}
+  .cmp th:first-child{background:var(--bg-alt)}
+  .matrix td{text-align:center;font-size:16px}
+  .matrix td:first-child{font-size:14.5px;text-align:left}
+  .ok{color:var(--accent);font-weight:800}
+  .ng{color:#c3c9d1}
+  .bars{margin:16px 0 8px}
+  .bar-row{display:flex;align-items:center;gap:10px;margin:10px 0}
+  .bar-label{flex:0 0 168px;font-size:14px;line-height:1.5}
+  .bar-track{flex:1;background:var(--bg-alt);border:1px solid var(--line);border-radius:6px;height:28px}
+  .bar-fill{background:var(--accent);height:100%;border-radius:5px}
+  .bar-fill.sub{background:#7fae8f}
+  .bar-val{font-weight:700;font-size:15px;white-space:nowrap;color:var(--core)}
+  .credits{font-size:12.5px;color:var(--muted);margin-top:30px;border-top:1px dashed var(--line);padding-top:12px}
+  .credits a{color:var(--muted)}
+  @media(max-width:640px){.bar-label{flex-basis:118px;font-size:13px}.cmp th:first-child,.cmp td:first-child{min-width:104px}}
 </style>
 </head>
 <body>
@@ -46,10 +77,13 @@
 
 <h1>専門職・業界特化エージェントの解説</h1>
 <p class="lead">M&amp;Aやコンサルティングのような業界特有の選考がある分野や、ゲーム・Webのクリエイター職、AI・機電系エンジニアのような専門分野では、業界に特化したエージェントの情報量が効きます。ここでは4サービスを、各社の公式情報に基づいて紹介します。</p>
+<img class="pageimg" src="img/specialist-top.jpg" alt="3人でビジネス面談をするイメージ" width="1200" height="630">
 <p class="pr">このページには広告・PRを含みます。紹介するサービスの情報は、各サービスの公式サイトで確認した内容に基づきます（確認日：2026年11月22日）。</p>
 
 <h2>NewMA（M&amp;A・コンサル業界特化）</h2>
-<div class="card">
+<div class="svc">
+<img src="img/card-newma.jpg" alt="ビジネスマン同士が話し合うイメージ" width="800" height="500" loading="lazy">
+<div class="svc-in">
 <h3>運営：NewMA株式会社</h3>
 <p>M&amp;A・コンサルティング業界に特化した転職エージェントです。コンサルタント自身がM&amp;A業界の経験者で、業界や業務、各求人の特徴を「求人票から伝わらないレベル」で伝えると公式サイトで説明しています。</p>
 <ul>
@@ -61,11 +95,15 @@
 <li>有料職業紹介事業の許可番号：27-ユ-304092</li>
 <li>利用は無料</li>
 </ul>
+<p class="fit"><b>こんな人に向く：</b>M&amp;A・コンサル業界への転職を、業界経験のあるコンサルタントに相談したい人</p>
 <p><a href="https://newma.co.jp/" rel="noopener" target="_blank">NewMA 公式サイト</a></p>
+</div>
 </div>
 
 <h2>sXars（関西特化・コンサル転職）</h2>
-<div class="card">
+<div class="svc">
+<img src="img/card-sxars.jpg" alt="オフィスのテーブルで相談する2人のイメージ" width="800" height="500" loading="lazy">
+<div class="svc-in">
 <h3>運営：株式会社sXars</h3>
 <p>関西に特化したコンサルティング業界向けの転職エージェントです。大阪を中心に支援し、初回の相談から選考対策、入社後まで同じ担当者が一貫して対応すると公式LPで案内しています。</p>
 <ul>
@@ -76,11 +114,15 @@
 <li>有料職業紹介事業の許可番号：27-ユ-305203</li>
 <li>利用は無料（求職者）</li>
 </ul>
+<p class="fit"><b>こんな人に向く：</b>関西でコンサル業界への転職を考えていて、平日夜間や土日にも相談したい人</p>
 <p><a href="https://lp.sxars.co.jp/" rel="noopener" target="_blank">sXars 公式サイト</a></p>
+</div>
 </div>
 
 <h2>マイナビクリエイター（Web・ゲーム・IT専門）</h2>
-<div class="card">
+<div class="svc">
+<img src="img/card-mynavi.jpg" alt="コンピューターでデザイン作業をするクリエイターのイメージ" width="800" height="500" loading="lazy">
+<div class="svc-in">
 <h3>運営：株式会社マイナビ</h3>
 <p>株式会社マイナビが運営する、Web・ゲーム・IT業界専門の転職エージェントです。クリエイター職を中心に、業界の企業から求人を預かっています。</p>
 <ul>
@@ -89,11 +131,15 @@
 <li>公式サイトで職種・勤務地などから求人を検索できる</li>
 <li>利用は無料</li>
 </ul>
+<p class="fit"><b>こんな人に向く：</b>Web・ゲーム・IT業界で、デザイナーやプランナーなどのクリエイター職を探している人</p>
 <p><a href="https://mynavi-creator.jp/" rel="noopener" target="_blank">マイナビクリエイター 公式サイト</a></p>
+</div>
 </div>
 
 <h2>AIdea Career（AI・IT／機電系エンジニア特化）</h2>
-<div class="card">
+<div class="svc">
+<img src="img/card-aidea.jpg" alt="モニターでコードを書くエンジニアのイメージ" width="800" height="500" loading="lazy">
+<div class="svc-in">
 <h3>運営：AIdea Career株式会社</h3>
 <p>AI・ITと機電系（機械・電気・電子・半導体・制御など）のエンジニアに特化した転職エージェントです。運営会社は2017年に大阪で設立されたAIdea Career株式会社（旧・株式会社Cloud Link）です。</p>
 <ul>
@@ -104,12 +150,15 @@
 <li>有料職業紹介事業の許可番号：27-ユ-302290</li>
 <li>利用は無料</li>
 </ul>
+<p class="fit"><b>こんな人に向く：</b>AI・IT／機電系のエンジニアで、オンラインや電話の面談で転職活動を進めたい人</p>
 <p><a href="https://aidea-career.co.jp/" rel="noopener" target="_blank">AIdea Career 公式サイト</a></p>
+</div>
 </div>
 
 <h2>専門職エージェントを選ぶときの見方</h2>
 <p>業界特化型は、その業界の選考の進み方や、求人票に載らない企業の特徴を知っているかが価値になります。面談では「自分の職種・業界の転職支援の実績」や「担当者自身の業界経験」を確認しましょう。エンジニア向けの案内は<a href="engineer.html">エンジニアの転職ガイド</a>、全サービスの一覧は<a href="compare.html">比較表</a>にまとめました。</p>
 <p class="src">出典：各サービスの公式サイト（NewMA、sXars公式LP、マイナビクリエイター、AIdea Career）および公式情報に基づく紹介記事。いずれも2026年11月22日に確認。</p>
+<p class="credits">写真クレジット：このページの写真はフリー素材サイト Pexels の商用利用可の写真を使用しています（<a href="https://www.pexels.com/photo/5439371/" rel="noopener" target="_blank">Tima Miroshnichenko</a>、<a href="https://www.pexels.com/photo/5439447/" rel="noopener" target="_blank">Tima Miroshnichenko</a>、<a href="https://www.pexels.com/photo/7643894/" rel="noopener" target="_blank">MART PRODUCTION</a>、<a href="https://www.pexels.com/photo/13451104/" rel="noopener" target="_blank">Jonathan Borba</a>、<a href="https://www.pexels.com/photo/7988115/" rel="noopener" target="_blank">Mikhail Nilov</a>／Pexels）。写真はイメージです。紹介するサービス各社の公式写真ではありません。</p>
 <p class="disclaimer">免責：このサイトは転職エージェントの選び方に関する一般情報のみを掲載しています。掲載内容は2026年11月22日時点で各サービスの公式サイトで確認した公開情報に基づきますが、サービス内容・条件は変更されることがあります。お申し込みの前に、必ず各サービスの公式サイトで最新の情報をご確認ください。特定のサービスへの登録を強制するものではありません。</p>
 
 </div></main>
