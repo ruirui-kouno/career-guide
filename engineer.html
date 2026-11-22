@@ -6,23 +6,23 @@
 <title>エンジニアの転職ガイド｜転職エージェントの選び方ガイド</title>
 <meta name="description" content="エンジニア向け転職サービス2社（明光キャリアパートナーズ・TechClips ME）を、公式情報に基づいて紹介します。相談型とスカウト型の違いも解説。">
 <style>
-  :root{--core:#17203a;--accent:#1f6f43;--ink:#23272f;--muted:#5d6673;--line:#dde1e8;--bg:#fff;--bg-alt:#f4f6f9}
+  :root{--core:#17203a;--accent:#1f6f43;--cta:#f26a1b;--cta-d:#c24e02;--blue:#1c4297;--bg-blue:#f0f3fa;--ink:#23272f;--muted:#5d6673;--line:#dde1e8;--bg:#fff;--bg-alt:#f4f6f9}
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;color:var(--ink);line-height:1.8;font-size:16px;background:var(--bg)}
   .wrap{max-width:860px;margin:0 auto;padding:0 22px}
   header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
   .header-in{display:flex;align-items:center;justify-content:space-between;min-height:58px;flex-wrap:wrap;gap:8px;padding:8px 0}
   .logo{font-weight:800;font-size:17px;color:var(--core);text-decoration:none}
-  .logo span{color:var(--accent)}
+  .logo span{color:var(--cta)}
   nav a{color:var(--muted);text-decoration:none;font-size:13.5px;margin-left:18px;font-weight:500}
   nav a:hover{color:var(--core)}
   main{padding:44px 0 20px}
   h1{font-size:27px;line-height:1.45;color:var(--core);margin-bottom:14px}
-  h2{font-size:20px;color:var(--core);margin:34px 0 10px;padding-top:8px;border-top:1px solid var(--line)}
+  h2{font-size:20px;color:var(--core);margin:36px 0 12px;padding:10px 14px;background:var(--bg-blue);border-left:5px solid var(--core);border-radius:0 8px 8px 0}
   h3{font-size:16.5px;color:var(--core);margin:22px 0 6px}
   p{margin-bottom:12px}
   .lead{color:var(--muted);font-size:17px;margin-bottom:26px}
-  .pr{font-size:13px;color:var(--accent);border:1px solid var(--accent);border-radius:8px;padding:8px 12px;margin-bottom:22px;background:#f2f8f4}
+  .pr{font-size:13px;color:var(--blue);border:1px solid var(--blue);border-radius:8px;padding:8px 12px;margin-bottom:22px;background:var(--bg-blue)}
   ul,ol{margin:0 0 14px 22px}
   li{margin-bottom:6px}
   table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:14.5px}
@@ -32,9 +32,9 @@
   .card{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:18px 0}
   .card h3{margin-top:0}
   .card img.guideimg{width:100%;height:auto;border-radius:8px;display:block;margin-bottom:12px}
-  .ad{border:2px solid var(--accent);border-radius:10px;padding:18px 20px;margin:34px 0;background:#f5faf6}
+  .ad{border:2px solid var(--blue);border-radius:10px;padding:18px 20px;margin:34px 0;background:var(--bg-blue)}
   .ad h2{border-top:none;margin-top:0;padding-top:0}
-  .ad a{color:var(--accent);font-weight:700}
+  .ad a{color:var(--blue);font-weight:700}
   .disclaimer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding-top:16px}
   .src{font-size:13px;color:var(--muted)}
   footer{border-top:1px solid var(--line);margin-top:20px;padding:22px 0 40px;font-size:13px;color:var(--muted)}
@@ -45,16 +45,16 @@
   .svc>img{width:100%;height:auto;display:block}
   .svc-in{padding:16px 20px 18px}
   .svc-in h3{margin-top:0}
-  .fit{background:#eef5f0;border-left:4px solid var(--accent);padding:8px 12px;margin:12px 0 4px;font-size:14.5px}
-  .fit b{color:var(--accent)}
+  .fit{background:#fff6ec;border-left:4px solid var(--cta);padding:8px 12px;margin:12px 0 4px;font-size:14.5px}
+  .fit b{color:var(--cta-d)}
   .svcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:18px 0}
   .svcgrid .svc{margin:0}
-  .cta{display:block;text-align:center;background:var(--core);color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-radius:12px;padding:16px 20px;margin:26px 0}
-  .cta small{display:block;font-weight:400;font-size:13.5px;color:#c8cfdd;margin-top:4px}
+  .cta{display:block;text-align:center;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-radius:12px;padding:16px 20px;margin:26px 0;box-shadow:0 3px 0 var(--cta-d)}
+  .cta small{display:block;font-weight:400;font-size:13.5px;color:#ffe9dc;margin-top:4px}
   .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0 18px;border:1px solid var(--line);border-radius:8px}
   .tablewrap table{margin:0;min-width:660px}
   .cmp th:first-child,.cmp td:first-child{position:sticky;left:0;z-index:1;background:#fff;box-shadow:2px 0 0 var(--line);font-weight:600;color:var(--core);min-width:128px}
-  .cmp th:first-child{background:var(--bg-alt)}
+  .cmp th:first-child{background:var(--core);color:#fff}
   .matrix td{text-align:center;font-size:16px}
   .matrix td:first-child{font-size:14.5px;text-align:left}
   .ok{color:var(--accent);font-weight:800}
@@ -63,11 +63,32 @@
   .bar-row{display:flex;align-items:center;gap:10px;margin:10px 0}
   .bar-label{flex:0 0 168px;font-size:14px;line-height:1.5}
   .bar-track{flex:1;background:var(--bg-alt);border:1px solid var(--line);border-radius:6px;height:28px}
-  .bar-fill{background:var(--accent);height:100%;border-radius:5px}
-  .bar-fill.sub{background:#7fae8f}
+  .bar-fill{background:var(--blue);height:100%;border-radius:5px}
+  .bar-fill.sub{background:#9db8e4}
   .bar-val{font-weight:700;font-size:15px;white-space:nowrap;color:var(--core)}
   .credits{font-size:12.5px;color:var(--muted);margin-top:30px;border-top:1px dashed var(--line);padding-top:12px}
   .credits a{color:var(--muted)}
+  table.cmp th{background:var(--core);color:#fff}
+  .heroband{background:linear-gradient(135deg,#17203a 0%,#1c4297 100%);border-radius:14px;padding:30px 28px 26px;margin:2px 0 24px;color:#fff}
+  .heroband h1{color:#fff;margin-bottom:10px}
+  .heroband .lead{color:#d7e0f2;margin-bottom:18px}
+  .heroband img{width:100%;height:auto;display:block;border-radius:10px;margin:0 0 18px}
+  .herobtns{display:flex;gap:12px;flex-wrap:wrap}
+  .herobtn{flex:1 1 220px;text-align:center;text-decoration:none;font-weight:700;font-size:16px;border-radius:10px;padding:14px 16px;background:var(--cta);color:#fff;box-shadow:0 3px 0 var(--cta-d)}
+  .herobtn.ghost{background:transparent;color:#fff;border:2px solid #fff;box-shadow:none}
+  .wakaru{background:var(--bg-blue);border:1px solid var(--line);border-radius:10px;padding:16px 20px 8px;margin:0 0 24px}
+  .wakaru .wk-t{font-size:16.5px;color:var(--core);font-weight:800;margin:0 0 8px}
+  .wakaru ul{list-style:none;margin:0 0 8px 2px}
+  .wakaru li{margin-bottom:7px;padding-left:24px;position:relative}
+  .wakaru li::before{content:"¹3";position:absolute;left:0;color:var(--accent);font-weight:800}
+  .catnav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+  .catnav a{flex:1 1 150px;text-align:center;text-decoration:none;font-weight:700;font-size:14.5px;color:var(--core);background:var(--bg-blue);border:1px solid var(--line);border-radius:10px;padding:11px 8px}
+  .catnav a span{display:block;font-weight:400;font-size:12.5px;color:var(--muted);margin-top:2px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+  .chip{font-size:12.5px;font-weight:600;color:var(--core);background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+  .chip.hot{color:var(--cta-d);border-color:var(--cta)}
+  .catch{color:var(--cta-d);font-weight:700;font-size:14.5px;margin:-2px 0 6px}
+  .svcbtn{display:block;text-align:center;background:var(--cta);color:#fff;text-decoration:none;font-weight:700;font-size:15.5px;border-radius:10px;padding:13px 16px;margin:14px 0 2px;box-shadow:0 3px 0 var(--cta-d)}
   @media(max-width:640px){.bar-label{flex-basis:118px;font-size:13px}.cmp th:first-child,.cmp td:first-child{min-width:104px}}
 </style>
 </head>
@@ -77,8 +98,15 @@
 
 <h1>エンジニアの転職ガイド</h1>
 <p class="lead">エンジニアの転職では、担当者が技術や開発体制の違いを理解しているかが重要です。自社開発・SIer・SESでは働き方が大きく異なり、年収の交渉にも市場の相場観が要ります。ここではエンジニア向けの2サービスを、公式サイトで確認できる事実に基づいて紹介します。2つは進め方が対照的で、相談型とスカウト型に分かれます。</p>
-<img class="pageimg" src="img/engineer-top.jpg" alt="デュアルモニターでコードを書くエンジニアのイメージ" width="1200" height="630">
+<img class="pageimg" src="img/engineer-top.jpg" alt="コードが表示されたモニターで作業するエンジニアのイメージ" width="1200" height="630">
 <p class="pr">このページには広告・PRを含みます。紹介するサービスの情報は、各サービスの公式サイトで確認した内容に基づきます（確認日：2026年11月22日）。</p>
+
+<div class="wakaru"><p class="wk-t">このページでわかること</p>
+<ul>
+<li>エンジニアの転職で確認しておきたいこと</li>
+<li>相談型（明光キャリアパートナーズ）とスカウト型（TechClips ME）の進め方の違い</li>
+<li>2サービスの特徴と使い分けの目安</li>
+</ul></div>
 
 <h2>エンジニアの転職で確認しておきたいこと</h2>
 <ul>
@@ -90,9 +118,11 @@
 
 <h2>明光キャリアパートナーズ（エンジニア転職）</h2>
 <div class="svc">
-<img src="img/card-meiko.jpg" alt="オフィスでコードを書く男性エンジニアのイメージ" width="800" height="500" loading="lazy">
+<img src="img/card-meiko.jpg" alt="会議室でノートパソコンを使う男性のイメージ" width="800" height="500" loading="lazy">
 <div class="svc-in">
 <h3>運営：株式会社明光キャリアパートナーズ</h3>
+<p class="catch">書類作成・面接対策まで伴走する、エンジニア経験者向けの相談型サービス</p>
+<div class="chips"><span class="chip hot">エンジニア経験者</span><span class="chip">相談型</span><span class="chip">求職者無料</span></div>
 <p>個別指導塾「明光義塾」を運営する明光ネットワークジャパンの子会社、株式会社明光キャリアパートナーズ（2022年9月設立）が運営するエンジニア向けの転職支援サービスです。エンジニア向けの案内では「STRATEGY CAREER」の名称が使われています。</p>
 <ul>
 <li>経験・希望・価値観のヒアリングをもとに、大手からスタートアップまで求人を提案する相談型</li>
@@ -104,15 +134,17 @@
 <li>利用は無料</li>
 </ul>
 <p class="fit"><b>こんな人に向く：</b>書類作成や面接対策まで担当者に伴走してほしいエンジニア経験者</p>
-<p><a href="https://meiko-career.jp/lp3/engineer/PR" rel="noopener" target="_blank">明光キャリアパートナーズ（エンジニア転職）公式サイト</a></p>
+<a class="svcbtn" href="https://meiko-career.jp/lp3/engineer/PR" rel="noopener" target="_blank">明光キャリアパートナーズの公式サイトを見る</a>
 </div>
 </div>
 
 <h2>TechClips ME（テックミー）</h2>
 <div class="svc">
-<img src="img/card-techclips.jpg" alt="オフィスでコードを書く女性エンジニアのイメージ" width="800" height="500" loading="lazy">
+<img src="img/card-techclips.jpg" alt="オフィスでノートパソコンを使う女性社員のイメージ" width="800" height="500" loading="lazy">
 <div class="svc-in">
 <h3>運営：notari株式会社（TechClips）</h3>
+<p class="catch">年収が提示されたスカウトが企業から届く、ITエンジニア限定のスカウト型サービス</p>
+<div class="chips"><span class="chip hot">ITエンジニア</span><span class="chip">スカウト型</span><span class="chip">求職者無料</span></div>
 <p>エンジニア専門の転職支援「TechClips」を手がけるnotari株式会社が提供する、ITエンジニア限定のダイレクトスカウト型サービスです。一般的なエージェントのように求人を紹介してもらうのではなく、企業からスカウトを受け取る形で進みます。</p>
 <ul>
 <li>企業から、年収が提示されたスカウトが届く「年収提示付きスカウト」が特徴</li>
@@ -123,14 +155,14 @@
 <li>利用は無料</li>
 </ul>
 <p class="fit"><b>こんな人に向く：</b>年収提示付きのスカウトを受け取りながら、自分の市場価値を確認したいITエンジニア</p>
-<p><a href="https://home.me.tech-clips.com/" rel="noopener" target="_blank">TechClips ME 公式サイト</a></p>
+<a class="svcbtn" href="https://home.me.tech-clips.com/" rel="noopener" target="_blank">TechClips MEの公式サイトを見る</a>
 </div>
 </div>
 
 <h2>2サービスの使い分け</h2>
 <p>担当者と相談しながら、書類や面接の準備まで伴走してほしい人は相談型の明光キャリアパートナーズが合います。まずは自分の市場価値を確認したい、企業からのオファーを待ちたいという人は、スカウト型のTechClips MEが合います。両方に登録して、提案される求人とスカウトの内容を比べる進め方もあります。一覧は<a href="compare.html">比較表</a>にまとめました。</p>
 <p class="src">出典：各サービスの公式サイト（明光キャリアパートナーズ公式LP、TechClips ME公式サイト）および公式情報に基づく紹介記事。いずれも2026年11月22日に確認。</p>
-<p class="credits">写真クレジット：このページの写真はフリー素材サイト Pexels の商用利用可の写真を使用しています（<a href="https://www.pexels.com/photo/36706459/" rel="noopener" target="_blank">Zayed Hossain</a>、<a href="https://www.pexels.com/photo/3861959/" rel="noopener" target="_blank">ThisIsEngineering</a>、<a href="https://www.pexels.com/photo/3861951/" rel="noopener" target="_blank">ThisIsEngineering</a>／Pexels）。写真はイメージです。紹介するサービス各社の公式写真ではありません。</p>
+<p class="credits">写真クレジット：このページの写真は、フリー素材サイト「ぱくたそ」（商用利用可）の日本人モデルの写真を使用しています（<a href="https://www.pakutaso.com/20230549145post-47083.html" rel="noopener" target="_blank">「サブモニターのコード画面を見るエンジニア男性」</a>、<a href="https://www.pakutaso.com/20210334064post-33796.html" rel="noopener" target="_blank">「会議室で黙々と資料を作るプログラマー社員」</a>、<a href="https://www.pakutaso.com/20220215033post-38582.html" rel="noopener" target="_blank">「コーディング中の女性社員（オフィス）」</a>／ぱくたそ）。写真はイメージです。紹介するサービス各社の公式写真ではありません。</p>
 <p class="disclaimer">免責：このサイトは転職エージェントの選び方に関する一般情報のみを掲載しています。掲載内容は2026年11月22日時点で各サービスの公式サイトで確認した公開情報に基づきますが、サービス内容・条件は変更されることがあります。お申し込みの前に、必ず各サービスの公式サイトで最新の情報をご確認ください。特定のサービスへの登録を強制するものではありません。</p>
 
 </div></main>
